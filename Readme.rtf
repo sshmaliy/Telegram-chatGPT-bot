@@ -1,0 +1,15 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab560
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f0\fs26 \cf0 This code sets up a Telegram bot that uses OpenAI's API to generate responses to text messages. The code first imports the necessary libraries, sets up the OpenAI API credentials and the Telegram bot, and defines a message handler.\
+\
+The message handler checks whether the message is from a private chat or a group/supergroup chat. If the message is from a private chat, the code calls the OpenAI API to generate a response and sends the response to the user. If the message is from a group or a supergroup, the code checks if the bot is mentioned in the message. If the bot is mentioned, the code calls the OpenAI API to generate a response and sends the response to the group chat.\
+\
+The code also includes error handling for cases where the bot is blocked by the group chat or the group chat cannot be found. Additionally, the code includes rate limiting handling and retries sending the message after the timeout has passed.\
+\
+Finally, the code starts the bot by calling the executor.start_polling() function with the defined message handler and skips any updates that occurred before the bot started running. Overall, the code is well-structured and efficiently handles incoming messages from both private and group/supergroup chats, and effectively generates responses using OpenAI's API.}
